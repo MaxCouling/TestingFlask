@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Awesome Prototype</title>
+    </head>
+    <body>
+        <h1>You went to /{{ path }}!</h1>
+
+        {% block content %}
+            <p>Content goes here.</p>
+        {% endblock %}
+
+        {% if path == "magic" %}
+            <p>MAGIC!!!!</p>
+        {% endif %}
+    </body>
+</html>
