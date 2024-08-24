@@ -15,3 +15,6 @@ source venv/bin/activate
 
 Or just make a venv in VScode (much easier)
 
+flask run / run flask does not work on my machine for some reason (Maybe conflicting terminals etc)
+
+## NOTE THIS IS NOT THE GITHUB REPO THAT WE WILL BE DOING THE PROJECT MANAGEMENT ON, I JUST WANTED TO PLAY AROUND WITH FLASK
