@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Create New Survey</h1>
+    <form method="POST">
+        <input type="text" name="title" placeholder="Title">
+        <textarea name="description" placeholder="Description"></textarea>
+        <input type="submit" value="Create Survey">
+    </form>
+{% endblock %}
