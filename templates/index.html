@@ -1,16 +1,11 @@
 {% extends "base.html" %}
-
 {% block title %}Home{% endblock %}
-
 {% block content %}
-    <h2>Available Surveys</h2>
-    <ul>
-        {% if current_user.is_authenticated %}
-            {% for survey in surveys %}
-                <li><a href="{{ url_for('survey', survey_id=survey.id) }}">{{ survey.title }}</a></li>
-            {% endfor %}
-        {% else %}
-            <p> Please log in to see surveys</p>
-        {% endif %}
-    </ul>
+    <h1>{{ user.name }} <span style="color: #28a745;">${{ user.balance }}</span></h1>
+    <input type="text" placeholder="Search">
+    <h2>Recommended</h2>
+    <div class="card">Sleep Trends <span style="float: right; color: #28a745;">$10</span></div>
+    <div class="card">Health Trends <span style="float: right; color: #28a745;">$5</span></div>
+    <h2>Saved</h2>
+    <div class="card">Social Media <span style="float: right; color: #28a745;">$5</span></div>
 {% endblock %}
